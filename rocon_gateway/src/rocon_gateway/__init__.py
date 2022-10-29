@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # License: BSD
 #   https://raw.github.com/robotics-in-concert/rocon_multimaster/license/LICENSE
@@ -20,8 +20,8 @@ from .flipped_interface import FlippedInterface
 from .master_api import LocalMaster
 from .gateway_node import GatewayNode
 from .graph import Graph
-import gateway
-from .gateway import Gateway
+from .gateway import *
+# from .gateway import Gateway
 from .network_interface_manager import NetworkInterfaceManager
-import samples
-import hub_manager
+from .samples import *
+from .hub_manager import *

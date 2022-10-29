@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # License: BSD
 #   https://raw.github.com/robotics-in-concert/rocon_multimaster/license/LICENSE
@@ -14,7 +14,7 @@ import gateway_msgs.msg as gateway_msgs
 import gateway_msgs.srv as gateway_srvs
 import std_msgs.msg as std_msgs
 import std_srvs.srv as std_srvs
-from urlparse import urlparse
+from urllib.parse import urlparse
 import rocon_hub_client
 
 from . import gateway

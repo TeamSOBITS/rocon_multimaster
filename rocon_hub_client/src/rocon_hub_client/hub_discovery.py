@@ -7,7 +7,7 @@
 ###############################################################################
 
 import threading
-from urlparse import urlparse
+from urllib.parse import urlparse
 import rospy
 import time
 import zeroconf_msgs.srv as zeroconf_srvs

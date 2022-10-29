@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # License: BSD
 #   https://raw.github.com/robotics-in-concert/rocon_multimaster/license/LICENSE
@@ -329,4 +329,4 @@ if __name__ == "__main__":
     gateways = ['dude', 'dudette']
     dudes = ['fred', 'dude']
     dudes[:] = [x for x in dudes if x in gateways]
-    print dudes
+    print (dudes)

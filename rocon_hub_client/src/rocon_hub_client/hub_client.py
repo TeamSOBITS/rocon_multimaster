@@ -7,7 +7,7 @@
 # Imports
 ###############################################################################
 
-from urlparse import urlparse
+from urllib.parse import urlparse
 
 import rospy
 import rocon_python_redis as redis

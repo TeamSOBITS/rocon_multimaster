@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # License: BSD
 #   https://raw.github.com/robotics-in-concert/rocon_multimaster/license/LICENSE
@@ -9,9 +9,9 @@
 
 import os
 import socket
-import httplib
+import http.client as httplib
 import errno
-import xmlrpclib
+from xmlrpc import client
 from contextlib import contextmanager
 
 from rosmaster.util import xmlrpcapi
@@ -19,7 +19,7 @@ from rosmaster.util import xmlrpcapi
 import rocon_python_comms
 
 try:
-    import urllib.parse as urlparse  # Python 3.x
+    from urllib.parse import urlparse  # Python 3.x
 except ImportError:
     import urlparse
 import re

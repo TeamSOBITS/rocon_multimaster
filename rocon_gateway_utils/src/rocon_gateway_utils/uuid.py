@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # License: BSD
 #   https://raw.github.com/robotics-in-concert/rocon_multimaster/license/LICENSE
@@ -48,6 +48,6 @@ def gateway_basename(gateway_name):
         return gateway_name
 
 if __name__ == '__main__':
-    print gateway_basename("dude")
-    print gateway_basename("dude8bd699042519416d88722e8b0611d43")
-    print gateway_basename("dude8bd699042519416d88722e8b0611d43b")
+    print (gateway_basename("dude"))
+    print (gateway_basename("dude8bd699042519416d88722e8b0611d43"))
+    print (gateway_basename("dude8bd699042519416d88722e8b0611d43b"))

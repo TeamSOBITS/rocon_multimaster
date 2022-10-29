@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # License: BSD
 #   https://raw.github.com/robotics-in-concert/rocon_multimaster/license/LICENSE
@@ -97,7 +97,7 @@ class Graph(object):
             self.pulled_edges.add(Edge(connection_id, remote_rule.gateway))
         for rule in self._local_gateway.public_interface:
             connection_id = rosgraph.impl.graph.topic_node(rule.name + '-' + rule.type)
-            # print "pulled edge: %s->%s" % (self._local_gateway.name, connection_id)
+            # print ("pulled edge: %s->%s" % (self._local_gateway.name, connection_id))
             self.pulled_nodes.append(connection_id)
             self.pulled_edges.add(Edge(self._local_gateway.name, connection_id))
         # Check remote gateways

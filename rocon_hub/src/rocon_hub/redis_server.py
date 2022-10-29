@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # License: BSD
 #   https://raw.github.com/robotics-in-concert/rocon_multimaster/license/LICENSE
@@ -205,6 +205,6 @@ def instantiate_local_conf_template(template, port, max_memory, logfile, working
 if __name__ == "__main__":
     pool = redis.ConnectionPool(host='localhost', port='6380', db=0)
     try:
-        print "dude"
+        print ("dude")
     except redis.exceptions.ConnectionError:
-        print "err"
+        print ("err")
